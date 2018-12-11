@@ -1,0 +1,20 @@
+{
+  "name": "norcal",
+  "version": "1.0.0",
+  "description": "Tabulation for norcal mock trial tournament",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "bulma": "^0.7.2"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.0"
+  },
+  "scripts": {
+    "test": "elm-app test"
+  },
+  "author": "Jack Lucky",
+  "license": "MIT"
+}

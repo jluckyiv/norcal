@@ -1,4 +1,5 @@
 # Norcal Tab
+
 Another attempt at getting Norcal Tab working.
 
 ## Elm App
@@ -818,23 +819,31 @@ serve -h
 ### Netlify
 
 #### Step 1: Create a `package.json` file
+
 #### Step 2: `npm install --save-dev create-elm-app`
+
 Since netlify runs the build step on their server we need to install create-elm-app.
+
 #### Step 3: Add a build script to the `package.json` file
-```
+
+```javascript
 "scripts": {
     "build": "elm-app build",
     ...
 }
 ```
+
 #### Step 4: Add a netlify.toml file in the repo's root
-```
+
+```toml
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 ```
+
 #### Step 5: Go to the netlify settings and set the publish directory to `build` and the build command to `npm run build`
+
 This step is important to make sure netlify uses the correct build command.
 
 ### GitHub Pages
